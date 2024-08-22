@@ -15,6 +15,10 @@ void division(double x,double y){
     double z=x/y;
     printf("%lf",z);
 }
+void modulus(double x,double y){
+    double z=x%y;
+    printf("%lf",z);
+}
 int main(){
     double a,b,ans;
     char operator;
@@ -32,6 +36,8 @@ int main(){
         case '-':subtraction(a,b);
         break;
         case '/':division(a,b);
+        break;
+        case '%':modulus(a,b);
         break;
         default:printf("Invalid operator.");
         break;
